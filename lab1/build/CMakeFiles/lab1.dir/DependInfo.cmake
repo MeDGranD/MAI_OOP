@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/medgrand/Repositories/MAI_OOP/lab1/src/Solution.cpp" "CMakeFiles/lab1.dir/src/Solution.cpp.o" "gcc" "CMakeFiles/lab1.dir/src/Solution.cpp.o.d"
   "/home/medgrand/Repositories/MAI_OOP/lab1/src/main.cpp" "CMakeFiles/lab1.dir/src/main.cpp.o" "gcc" "CMakeFiles/lab1.dir/src/main.cpp.o.d"
+  "/home/medgrand/Repositories/MAI_OOP/lab1/src/tests.cpp" "CMakeFiles/lab1.dir/src/tests.cpp.o" "gcc" "CMakeFiles/lab1.dir/src/tests.cpp.o.d"
   )
 
 # Targets to which this target links.
