@@ -108,6 +108,7 @@ lab1_EXTERNAL_OBJECTS =
 lab1: CMakeFiles/lab1.dir/src/main.cpp.o
 lab1: CMakeFiles/lab1.dir/src/Solution.cpp.o
 lab1: CMakeFiles/lab1.dir/build.make
+lab1: /usr/lib/x86_64-linux-gnu/libgtest.a
 lab1: CMakeFiles/lab1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/medgrand/Repositories/MAI_OOP/lab1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lab1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab1.dir/link.txt --verbose=$(VERBOSE)

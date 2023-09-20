@@ -2,10 +2,11 @@
 
 namespace lab1{
 
-    std::pair<int, int> Solution::closest_pair_tonum(int upper_limit){
+    std::pair<int, int> Solution::closest_pair_tonum(int64_t upper_limit){
 
-        for (size_t i = upper_limit - 1; i > 0; --i) {
-        for (size_t j = i - 1; j > 0; --j) {
+        for (int64_t i = upper_limit - 1; i > 0; --i) {
+        for (int64_t j = i - 1; j > 0; --j) {
+
             double sqrt1 = sqrt(i + j);
             double sqrt2 = sqrt(i - j);
 
@@ -20,7 +21,7 @@ namespace lab1{
         return x >= 0 ? x : -x;
     }
 
-    double Solution::sqrt(int x){
+    double Solution::sqrt(int64_t x){
         const double eps = 1e-15;
 
         double squareRoot = x;
