@@ -13,4 +13,4 @@ add_executable(${PROJECT_NAME} ${SOURCE_OUT})
 target_link_libraries(${PROJECT_NAME} ${GTEST_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 
 enable_testing()
-add_test(${PROJECT_NAME} gtests)
+add_test(${PROJECT_NAME} ${PROJECT_NAME})
