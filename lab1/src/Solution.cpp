@@ -5,12 +5,17 @@ namespace lab1{
     std::pair<int, int> Solution::closest_pair_tonum(int64_t upper_limit){
 
         for (int64_t i = upper_limit - 1; i > 0; --i) {
-        for (int64_t j = i - 1; j > 0; --j) {
+            for (int64_t j = i - 1; j > 0; --j) {
 
-            double sqrt1 = sqrt(i + j);
-            double sqrt2 = sqrt(i - j);
+                double sqrt1 = sqrt(i + j);
+                double sqrt2 = sqrt(i - j);
 
-            if (sqrt1 == static_cast<int>(sqrt1) && sqrt2 == static_cast<int>(sqrt2)) return std::pair<int, int>(i, j);
+                if(
+                    sqrt1 == static_cast<int>(sqrt1) &&
+                    sqrt2 == static_cast<int>(sqrt2)
+                ){
+                    return std::pair<int, int>(i, j);
+                }
             }
         }
         return std::pair<int, int>(0, 0);
