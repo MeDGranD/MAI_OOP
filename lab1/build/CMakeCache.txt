@@ -213,6 +213,15 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 GTest_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/GTest
 
 //Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/medgrand/Repositories/MAI_OOP/lab1/build
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/medgrand/Repositories/MAI_OOP/lab1
+
+//Value Computed by CMake
 lab1_BINARY_DIR:STATIC=/home/medgrand/Repositories/MAI_OOP/lab1/build
 
 //Value Computed by CMake

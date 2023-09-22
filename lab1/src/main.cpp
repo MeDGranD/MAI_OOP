@@ -8,7 +8,5 @@ int main(){
     std::pair<int, int> ans = lab1::Solution::closest_pair_tonum(x);
     std::cout << ans.first << ' ' << ans.second << std::endl;
 
-    ::testing::InitGoogleTest();
-
-    return RUN_ALL_TESTS();
+    return 0;
 }

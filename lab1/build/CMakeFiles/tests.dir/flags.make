@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -std=c++17 -Wall
+CXX_FLAGS =  -std=c++17 -Wall -DGTEST_HAS_PTHREAD=1
 

@@ -22,7 +22,14 @@ TEST(Lab1, example2){
     ASSERT_EQ(ans.second, 36);
 }
 TEST(Lab1, bigNumber){
-    std::pair<int, int> ans = lab1::Solution::closest_pair_tonum(1e4);
+    std::pair<int, int> ans = lab1::Solution::closest_pair_tonum(1e6);
     ASSERT_NE(ans.first, 0);
     ASSERT_NE(ans.second, 0);
+}
+
+
+int main(){
+    ::testing::InitGoogleTest();
+
+    return RUN_ALL_TESTS();
 }

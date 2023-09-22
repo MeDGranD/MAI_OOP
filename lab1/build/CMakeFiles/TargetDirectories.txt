@@ -1,3 +1,5 @@
 /home/medgrand/Repositories/MAI_OOP/lab1/build/CMakeFiles/lab1.dir
+/home/medgrand/Repositories/MAI_OOP/lab1/build/CMakeFiles/tests.dir
+/home/medgrand/Repositories/MAI_OOP/lab1/build/CMakeFiles/test.dir
 /home/medgrand/Repositories/MAI_OOP/lab1/build/CMakeFiles/edit_cache.dir
 /home/medgrand/Repositories/MAI_OOP/lab1/build/CMakeFiles/rebuild_cache.dir

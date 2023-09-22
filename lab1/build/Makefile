@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/medgrand/Repositories/MAI_OOP/lab1/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -129,12 +139,26 @@ lab1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
 .PHONY : lab1/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
 src/Solution.o: src/Solution.cpp.o
 .PHONY : src/Solution.o
 
 # target to build an object file
 src/Solution.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/Solution.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Solution.cpp.o
 .PHONY : src/Solution.cpp.o
 
 src/Solution.i: src/Solution.cpp.i
@@ -143,6 +167,7 @@ src/Solution.i: src/Solution.cpp.i
 # target to preprocess a source file
 src/Solution.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/Solution.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Solution.cpp.i
 .PHONY : src/Solution.cpp.i
 
 src/Solution.s: src/Solution.cpp.s
@@ -151,6 +176,7 @@ src/Solution.s: src/Solution.cpp.s
 # target to generate assembly for a file
 src/Solution.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/Solution.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Solution.cpp.s
 .PHONY : src/Solution.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -182,7 +208,7 @@ src/tests.o: src/tests.cpp.o
 
 # target to build an object file
 src/tests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/tests.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.cpp.o
 .PHONY : src/tests.cpp.o
 
 src/tests.i: src/tests.cpp.i
@@ -190,7 +216,7 @@ src/tests.i: src/tests.cpp.i
 
 # target to preprocess a source file
 src/tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/tests.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.cpp.i
 .PHONY : src/tests.cpp.i
 
 src/tests.s: src/tests.cpp.s
@@ -198,7 +224,7 @@ src/tests.s: src/tests.cpp.s
 
 # target to generate assembly for a file
 src/tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/src/tests.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/tests.cpp.s
 .PHONY : src/tests.cpp.s
 
 # Help Target
@@ -209,7 +235,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... lab1"
+	@echo "... tests"
 	@echo "... src/Solution.o"
 	@echo "... src/Solution.i"
 	@echo "... src/Solution.s"

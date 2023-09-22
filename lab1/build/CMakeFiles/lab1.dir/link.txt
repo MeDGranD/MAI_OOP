@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++17 -Wall -rdynamic CMakeFiles/lab1.dir/src/main.cpp.o CMakeFiles/lab1.dir/src/Solution.cpp.o CMakeFiles/lab1.dir/src/tests.cpp.o -o lab1  /usr/lib/x86_64-linux-gnu/libgtest.a 
+/usr/bin/c++  -std=c++17 -Wall -rdynamic CMakeFiles/lab1.dir/src/main.cpp.o CMakeFiles/lab1.dir/src/Solution.cpp.o -o lab1 

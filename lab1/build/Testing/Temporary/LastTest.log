@@ -1,13 +1,12 @@
-Start testing: Sep 22 09:34 MSK
+Start testing: Sep 22 09:56 MSK
 ----------------------------------------------------------
-1/1 Testing: lab1
-1/1 Test: lab1
-Command: "/home/medgrand/Repositories/MAI_OOP/lab1/build/lab1"
+1/1 Testing: BASIC
+1/1 Test: BASIC
+Command: "/home/medgrand/Repositories/MAI_OOP/lab1/build/tests"
 Directory: /home/medgrand/Repositories/MAI_OOP/lab1/build
-"lab1" start time: Sep 22 09:34 MSK
+"BASIC" start time: Sep 22 09:56 MSK
 Output:
 ----------------------------------------------------------
-5 4
 [==========] Running 5 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 5 tests from Lab1
@@ -20,18 +19,18 @@ Output:
 [ RUN      ] Lab1.example2
 [       OK ] Lab1.example2 (0 ms)
 [ RUN      ] Lab1.bigNumber
-[       OK ] Lab1.bigNumber (15 ms)
-[----------] 5 tests from Lab1 (16 ms total)
+[       OK ] Lab1.bigNumber (1134 ms)
+[----------] 5 tests from Lab1 (1135 ms total)
 
 [----------] Global test environment tear-down
-[==========] 5 tests from 1 test suite ran. (16 ms total)
+[==========] 5 tests from 1 test suite ran. (1135 ms total)
 [  PASSED  ] 5 tests.
 <end of output>
-Test time =   2.50 sec
+Test time =   1.14 sec
 ----------------------------------------------------------
 Test Passed.
-"lab1" end time: Sep 22 09:34 MSK
-"lab1" time elapsed: 00:00:02
+"BASIC" end time: Sep 22 09:56 MSK
+"BASIC" time elapsed: 00:00:01
 ----------------------------------------------------------
 
-End testing: Sep 22 09:34 MSK
+End testing: Sep 22 09:56 MSK
