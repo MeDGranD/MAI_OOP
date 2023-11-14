@@ -2,6 +2,13 @@
 
 int main(){
 
+    lab2::Thirdteen temp1("000");
+    lab2::Thirdteen temp2("000");
+    lab2::Thirdteen temp3("000");
+
+    //std::cout << temp1 - temp2 + temp3 << std::endl;
+    //std::cout << temp1 - temp2 - temp3 << std::endl;
+
     std::cout << "Enter a 13th number:" << std::endl;
     std::string str;
     getline(std::cin, str);

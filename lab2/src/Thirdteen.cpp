@@ -15,7 +15,7 @@ namespace lab2{
 
     Thirdteen::Thirdteen(): sz(1){
         this->array = new unsigned char[this->sz];
-        new(this->array + 0) unsigned char();
+        new(this->array + 0) unsigned char('0');
     }
 
     Thirdteen::Thirdteen(size_t size, unsigned char data): sz(size){
@@ -351,7 +351,8 @@ namespace lab2{
     }
 
     void Thirdteen::reduce_size(){
-        if(this->array[this->sz - 1] != '0'){
+
+        if(this->array[this->sz - 1] != '0' || this->sz == 1){
             return;
         }
         --this->sz;
