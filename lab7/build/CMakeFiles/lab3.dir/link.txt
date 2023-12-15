@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++17 -Wall -rdynamic CMakeFiles/lab3.dir/src/Factory.cpp.o CMakeFiles/lab3.dir/src/Observer.cpp.o CMakeFiles/lab3.dir/src/Visitor.cpp.o CMakeFiles/lab3.dir/src/Scene.cpp.o CMakeFiles/lab3.dir/src/NPC.cpp.o CMakeFiles/lab3.dir/src/main.cpp.o -o lab3 
